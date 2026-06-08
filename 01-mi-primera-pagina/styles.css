@@ -1,0 +1,65 @@
+#titulo-principal {
+    color: orange;
+    background: yellow;
+    font-size: 100px;
+    text-align: center;
+}
+
+p {
+    color: blue;
+    font-size: 50px;
+}
+
+h2 {
+    color: red;
+    font-size: 70px;
+    text-align: center;
+}
+
+h3 {
+    color: magenta;
+    font-size: 60px;
+    text-align: center;
+}
+
+.interes {
+    color: purple;
+    font-size: 50px;
+    background: cyan;
+}
+
+.pros {
+    color: green;
+    font-size: 50px;
+}
+
+.contras {
+    color: brown;
+    font-size: 50px;
+}
+
+a {
+    color: white;
+    background: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+img {
+    width: 800px;
+}
+
+li {
+    color: orangered;
+    font-size: 50px;
+    background: lightgray;
+}
+
+#icono-pagina-principal {
+    width: 100px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+}
