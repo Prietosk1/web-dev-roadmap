@@ -10,41 +10,66 @@ h1 {
     padding: 20px;
     border-radius: 15px;
     border: 5px dashed #A39167;
+    margin: 50px;
 }
 
 h2 {
-    color: #636058;
+    color: white;
     font-size: 60px;
     margin: 0;
 }
 
 li {
-    font-size: 40px;
+    font-size: 30px;
+    margin: 10px 0;
 }
 
 a {
+    display: block;
     text-decoration: none;
-    color: #E4BA57;
     font-weight: bold;
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px 10px;
+    color: #636058;
+    background: white;
+    transition: 0.3s;
+    border: 2px solid transparent;
 }
 
 p {
+    margin: 0;
+    padding: 5px 10px;
     color: #65728E;
-    font-size: 30px;
 }
 
 ul {
     list-style-type: disc;
     color: #A39167;
+
 }
 
 .centro-contenedor {
     display: flex;
     justify-content: center;
+    margin: 30px;
 }
 
 #contenedor-proyecto {
     background: #5682E3;
     padding: 20px;
     border-radius: 15px;
+    transition: 0.3s;
+    border: 5px double transparent;
+}
+
+a:hover {
+    background: #E4BA57;
+    color: white;
+    transform: rotate(1deg);
+    border-color: white;
+}
+
+#contenedor-proyecto:hover {
+    border-color: #E4BA57;
 }
