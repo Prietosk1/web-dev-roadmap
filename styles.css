@@ -70,6 +70,12 @@ a:hover {
     border-color: white;
 }
 
+a:active {
+    color: #E4BA57;
+    background: white;
+    border-color: #E4BA57;
+}
+
 #contenedor-proyecto:hover {
     border-color: #E4BA57;
 }

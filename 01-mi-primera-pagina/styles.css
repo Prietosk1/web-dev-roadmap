@@ -176,6 +176,12 @@ li {
     cursor: pointer;
 }
 
+#form-contacto button:active {
+    background: #FCBB50;
+    color: #F5F5DC;
+    border-color: #F5F5DC;
+}
+
 #form-contacto input:hover,
 #form-contacto textarea:hover {
     outline-color: #F5F5DC;
@@ -194,6 +200,12 @@ a:hover {
     color: white;
     border-color: white;
     transform: scale(1.05) rotate(-3deg);
+}
+
+a:active {
+    background: white;
+    color: #A39167;
+    border-color: #A39167;
 }
 
 img:hover {
