@@ -116,17 +116,6 @@ li {
     gap: 50px;
 }
 
-a:hover {
-    background: #A39167;
-    color: white;
-    border-color: white;
-    transform: scale(1.05) rotate(-3deg);
-}
-
-img:hover {
-    transform: scale(1.05);
-}
-
 #galeria img:hover {
     transform: rotate(3deg);
 }
@@ -198,4 +187,15 @@ img:hover {
     outline-color: #F5F5DC;
     background: #C9A469;
     color: #F5F5DC;
+}
+
+a:hover {
+    background: #A39167;
+    color: white;
+    border-color: white;
+    transform: scale(1.05) rotate(-3deg);
+}
+
+img:hover {
+    transform: scale(1.05);
 }
