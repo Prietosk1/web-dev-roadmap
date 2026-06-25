@@ -1,0 +1,144 @@
+:root {
+    --main-color: #B83B09;
+    --secondary-color: #B8090D;
+    --ternary-color: #18B89E;
+    --light-color: #d0d6da;
+    --dark-color: #634A40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 25px;
+    background-color: var(--light-color);
+}
+
+h1 {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+h2 {
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+.todo-list {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.todo-list li {
+    margin-bottom: 5px;
+}
+
+.todo-list label {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 1000px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.todo-list label:hover {
+    background-color: var(--secondary-color);
+}
+
+.todo-list label:has(input[type="checkbox"]:checked) {
+    background-color: var(--ternary-color);
+}
+
+.todo-list span {
+    color: white;
+    font-weight: bold;
+}
+
+.todo-list input[type="checkbox"]:checked+span {
+    text-decoration: line-through;
+    color: var(--dark-color);
+}
+
+#main-container {
+    max-width: 700px;
+    max-height: 800px;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    border-radius: 25px 5px 25px 5px;
+    background-color: var(--light-color);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.35);
+}
+
+#add-task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+#add-task-container label {
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+#task-input {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+
+
+#task-input input {
+    flex-grow: 1;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 1000px;
+    border: 2px solid var(--main-color);
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    transition: 0.3s;
+}
+
+#task-input input:hover {
+    border-color: var(--ternary-color);
+}
+
+#task-input input:focus {
+    outline: none;
+    background-color: var(--secondary-color);
+}
+
+#task-input button {
+    padding: 5px 20px;
+    border-radius: 1000px;
+    border: 2px solid transparent;
+    font-size: 20px;
+    color: white;
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#task-input button:hover {
+    background-color: var(--ternary-color);
+    transform: scale(1.05);
+}
+
+#task-input button:active {
+    color: var(--ternary-color);
+    border-color: var(--ternary-color);
+    background-color: white;
+}
