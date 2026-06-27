@@ -2,6 +2,7 @@
     --main-color: #B83B09;
     --secondary-color: #B8090D;
     --ternary-color: #18B89E;
+    --quaternary-color: #1baf4c;
     --light-color: #d0d6da;
     --dark-color: #634A40;
 }
@@ -58,6 +59,10 @@ h2 {
 
 .todo-list label:has(input[type="checkbox"]:checked) {
     background-color: var(--ternary-color);
+}
+
+.todo-list label:has(input[type="checkbox"]:checked):hover {
+    background-color: var(--quaternary-color);
 }
 
 .todo-list span {
