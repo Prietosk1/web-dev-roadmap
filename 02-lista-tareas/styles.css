@@ -101,7 +101,9 @@ h2 {
 
 #task-input {
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     width: 100%;
 }
 
