@@ -68,6 +68,10 @@ h2 {
 .todo-list span {
     color: white;
     font-weight: bold;
+    hyphens: auto;
+    /* This last two keeps text wrapping constraints intact if hyphens fails*/
+    overflow-wrap: break-word;
+    min-width: 0;
 }
 
 .todo-list input[type="checkbox"]:checked+span {
@@ -84,6 +88,8 @@ h2 {
     border-radius: 25px 5px 25px 5px;
     background-color: var(--light-color);
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.35);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #add-task-container {
